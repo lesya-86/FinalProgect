@@ -12,6 +12,8 @@
 Если поле inDelivery == true, то вывести статус 1.
 Для остальных случаев вывести 0.
 •	SELECT track, CASE WHEN finished = true THEN 2 WHEN cancelled = true THEN -1 WHEN "inDelivery" = true THEN 1 ELSE 0 END AS status FROM "Orders";
+
+
 Автоматизация теста к API
 Теперь автоматизируй сценарий, который подготовили коллеги-тестировщики:
 Клиент создает заказ.
