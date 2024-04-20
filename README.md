@@ -7,6 +7,7 @@
 •	SELECT c.login, count(o.id) FROM "Couriers" AS c JOIN "Orders" AS o ON c.id = o."courierId" WHERE "inDelivery" = true GROUP BY c.login;
 
 Задание 2
+
 Ты тестируешь статусы заказов. Нужно убедиться, что в базе данных они записываются корректно.
 Для этого: выведи все трекеры заказов и их статусы. 
 Статусы определяются по следующему правилу:
